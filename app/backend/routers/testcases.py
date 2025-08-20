@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from typing import List
 from backend.database import get_db
 from backend.models.testcase import TestCase
-from app.schemas.testcase import TestCaseCreate, TestCaseUpdate, TestCaseOut
+from backend.schemas.testcases import TestCaseCreate, TestCaseUpdate, TestCaseOut
 
 router = APIRouter(prefix="/testcases", tags=["TestCases"])
 
